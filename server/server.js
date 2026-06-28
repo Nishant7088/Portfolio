@@ -14,12 +14,26 @@ connectDB();
 
 const app = express();
 
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
-    credentials: true,
-  })
-);
+const allowedOrigin = process.env.CLIENT_URL || "http://localhost:5173";
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    // Allow requests with no origin (e.g. curl, server-to-server, Postman)
+    if (!origin) return callback(null, true);
+
+    const isExactMatch = origin === allowedOrigin;
+    const isVercelPreview = /\.vercel\.app$/.test(new URL(origin).hostname);
+
+    if (isExactMatch || isVercelPreview) {
+      return callback(null, true);
+    }
+
+    return callback(new Error("Not allowed by CORS"));
+  },
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
