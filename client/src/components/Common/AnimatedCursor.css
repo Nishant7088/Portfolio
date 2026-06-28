@@ -1,0 +1,42 @@
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 9998;
+  will-change: transform;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent-primary, #6d5ef7);
+  transform: translate(-50%, -50%);
+  margin-left: -3px;
+  margin-top: -3px;
+}
+
+.cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--accent-primary, #6d5ef7);
+  margin-left: -16px;
+  margin-top: -16px;
+  transition: width 0.25s, height 0.25s, opacity 0.25s, border-color 0.25s;
+  opacity: 0.6;
+}
+
+.cursor-ring.hovered {
+  width: 50px;
+  height: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  border-color: var(--accent-tertiary, #00c9a7);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .cursor-dot, .cursor-ring { display: none; }
+}
