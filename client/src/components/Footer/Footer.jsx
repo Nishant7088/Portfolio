@@ -2,9 +2,9 @@ import "./Footer.css";
 
 const QUICK_LINKS = ["Home", "About", "Skills", "Experience", "Projects", "Contact"];
 const SOCIAL_LINKS = [
-  { label: "GitHub", href: "https://github.com/nishantagarwal" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/nishantagarwal" },
-  { label: "Email", href: "mailto:nishant.agarwal@example.com" },
+  { label: "GitHub", href: "https://github.com/Nishant7088" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/nishant-agarwal-5a3a8a211/" },
+  { label: "Email", href: "mailto:anishant415@gmail.com" },
 ];
 
 const Footer = () => {
