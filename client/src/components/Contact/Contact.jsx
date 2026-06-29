@@ -6,8 +6,8 @@ import "./Contact.css";
 
 const CONTACT_INFO = [
   { icon: "📞", label: "Phone", value: "+91 70883 11316 ", href: "tel:+917088311316" },
-  { icon: "📧", label: "Email", value: "nishant.agarwal@example.com", href: "mailto:nishant.agarwal@example.com" },
-  { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/nishantagarwal", href: "https://linkedin.com/in/nishantagarwal" },
+  { icon: "📧", label: "Email", value: "anishant415@gmail.com", href: "mailto:anishant415@gmail.com" },
+  { icon: "💼", label: "LinkedIn", value: "https://www.linkedin.com/in/nishant-agarwal-5a3a8a211/", href: "https://www.linkedin.com/in/nishant-agarwal-5a3a8a211/" },
   { icon: "🐙", label: "GitHub", value: "https://github.com/Nishant7088", href: "https://github.com/Nishant7088" },
 ];
 
