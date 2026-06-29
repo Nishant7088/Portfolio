@@ -5,7 +5,7 @@ import { useInView } from "../../hooks/useInView.js";
 import "./Contact.css";
 
 const CONTACT_INFO = [
-  { icon: "📞", label: "Phone", value: "+91 00000 00000", href: "tel:+910000000000" },
+  { icon: "📞", label: "Phone", value: "+91 70883 11316 ", href: "tel:+917088311316" },
   { icon: "📧", label: "Email", value: "nishant.agarwal@example.com", href: "mailto:nishant.agarwal@example.com" },
   { icon: "💼", label: "LinkedIn", value: "linkedin.com/in/nishantagarwal", href: "https://linkedin.com/in/nishantagarwal" },
   { icon: "🐙", label: "GitHub", value: "github.com/nishantagarwal", href: "https://github.com/nishantagarwal" },
